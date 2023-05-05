@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:padding="22dp"
+    android:paddingLeft="5dp"
+    android:background="@drawable/mb"
+    android:paddingBottom="100dp"
+    android:textAlignment="textStart">
+
+    <TextView
+        android:id="@+id/dailyExpenseTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4F200D"
+        android:text="Daily Expense"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/incomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Income: "
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/mealListTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Meal List"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="1"
+        android:background="#6d578e"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="15dp"
+        android:textAlignment="gravity">
+
+        <LinearLayout
+            android:id="@+id/mealListLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Add your meal items here as separate LinearLayouts -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/caloriesGoalTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="#B9EDDD"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:text="Calories Goal: "
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/monthlyGoalTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#18082f"
+        android:fontFamily="sans-serif-thin"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="7dp"
+        android:text="Monthly Goal: "
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/totalBalanceTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EAE7EF"
+        android:paddingLeft="5dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="12dp"
+        android:text="Total Balance: "
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/addExpenseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Expense"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:padding="16dp" />
+
+</LinearLayout>

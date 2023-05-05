@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CENTsible</string>
+    <string name="income">INCOME</string>
+    <string name="monthly_goal">MONTHLY GOAL</string>
+    <string name="calories_goal">CALORIES GOAL</string>
+    <string name="submit">Submit</string>
+</resources>
