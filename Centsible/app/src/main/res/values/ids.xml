@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="incomeTextView" type="id" />
+    <item name="expenseEditText" type="id" />
+    <item name="addExpenseButton" type="id" />
+</resources>

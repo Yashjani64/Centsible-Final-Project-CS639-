@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bi3"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/incomeLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:fontFamily="serif"
+        android:lineSpacingExtra="12sp"
+        android:text="@string/income"
+        android:textColor="#FDFDFD"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/incomeEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/incomeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toEndOf="@id/incomeLabelTextView"
+        android:background="@color/white"
+
+
+        android:backgroundTint="#FFFFFF"
+        android:inputType="numberDecimal"
+        android:padding="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/monthlyGoalLabelTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incomeLabelTextView" />
+
+    <TextView
+        android:id="@+id/monthlyGoalLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/incomeLabelTextView"
+        android:fontFamily="serif"
+
+
+        android:lineSpacingExtra="12sp"
+        android:text="@string/monthly_goal"
+
+        android:textColor="#FDFDFD"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/monthlyGoalEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incomeEditText" />
+
+    <EditText
+        android:id="@+id/monthlyGoalEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/incomeEditText"
+        android:layout_marginLeft="60dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="60dp"
+        android:layout_toEndOf="@id/monthlyGoalLabelTextView"
+        android:background="@color/white"
+        android:backgroundTint="#FDFAFAFA"
+        android:inputType="numberDecimal"
+        android:padding="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/caloriesGoalLabelTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monthlyGoalLabelTextView" />
+
+    <TextView
+        android:id="@+id/caloriesGoalLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/monthlyGoalLabelTextView"
+        android:layout_marginTop="40dp"
+        android:fontFamily="serif"
+        android:lineSpacingExtra="12sp"
+
+        android:text="@string/calories_goal"
+
+        android:textColor="#FDFDFD"
+        android:textSize="24sp"
+
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/caloriesGoalEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monthlyGoalEditText" />
+
+    <EditText
+        android:id="@+id/caloriesGoalEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/monthlyGoalEditText"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="1dp"
+
+        android:layout_marginRight="60dp"
+        android:layout_toEndOf="@id/caloriesGoalLabelTextView"
+        android:background="@color/white"
+        android:backgroundTint="#B2FF9800"
+        android:inputType="numberDecimal"
+        android:padding="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/submitButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caloriesGoalLabelTextView" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/caloriesGoalLabelTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/myButtonColor"
+        android:padding="10sp"
+        android:text="@string/submit"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caloriesGoalEditText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
