@@ -2,6 +2,9 @@
 
 Idea Proposal -  CENTSIBLE
 
+Youtube Video LINK - https://www.youtube.com/watch?v=fTv3P3f5P08
+Presentation link - https://docs.google.com/presentation/d/1ts-1gl5HHoNDAJ637QpHQEgaSSL9skd-uxf9bG2EJXk/edit?usp=sharing
+
 
 Names: Yash Jani 
 
